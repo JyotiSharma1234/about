@@ -1,23 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import { Switch, Redirect, Route } from 'react-router-dom';
+import Routes from './Routes'
+import { Suspense } from 'react';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-         Jyoti Sharma
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <main className="App-header">
+        <Suspense fallback={<div>Loading...</div>}>
+            <Switch>
+                {Routes.map(route =>
+                    // We need to redirect not allowed routes to home
+                    route.redirect ? (
+                        <Redirect
+                            key={route.path}
+                            from={route.path}
+                            to="/"
+                        />
+                    ) : (
+                        <Route
+                            exact={route.exact}
+                            key={route.path}
+                            path={route.path}
+                            component={route.component}
+                        />
+                    )
+                )}
+                </Switch>
+            </Suspense>
+        </main>
     </div>
   );
 }
