@@ -24,7 +24,7 @@ const Home = (props) => {
 
     return (
         <div className={classes.content}>
-            Home page
+            Jyoti Sharma
         </div>
     );
 };

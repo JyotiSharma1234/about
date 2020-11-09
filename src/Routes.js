@@ -13,7 +13,7 @@ let routes = [
         redirect: false
     },
     {
-        path: '/home',
+        path: '/certificates',
         component: Certificate,
         exact: true,
         redirect: false
