@@ -1,0 +1,2 @@
+(this.webpackJsonpabout=this.webpackJsonpabout||[]).push([[5],{175:function(t,n,e){"use strict";e.r(n);var c=e(2),o=(e(0),e(157)),i=Object(o.a)((function(t){return{}})),r=function(t){i();return Object(c.jsx)("div",{children:"Jyoti Sharma"})},a=Object(o.a)((function(t){return{section:{marginTop:80,padding:10,overflow:"auto",height:700,color:"yellow"}}}));n.default=function(t){var n=a();return Object(c.jsx)("div",{className:n.section,children:Object(c.jsx)(r,{})})}}}]);
+//# sourceMappingURL=5.4f7ab1ad.chunk.js.map

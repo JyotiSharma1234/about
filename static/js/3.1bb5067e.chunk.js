@@ -1,2 +1,0 @@
-(this.webpackJsonpabout=this.webpackJsonpabout||[]).push([[3],{165:function(t,e,n){"use strict";n.r(e);var a=n(3),i=(n(0),n(151)),c=Object(i.a)((function(t){return{paper:{height:"100%",padding:t.spacing(2),textAlign:"center",color:t.palette.text.secondary},section:{marginTop:10,padding:10,overflow:"auto",height:700}}}));e.default=function(t){var e=c();return Object(a.jsx)("div",{className:e.content,children:"Certificate page"})}}}]);
-//# sourceMappingURL=3.1bb5067e.chunk.js.map

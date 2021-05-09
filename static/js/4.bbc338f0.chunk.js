@@ -1,2 +1,0 @@
-(this.webpackJsonpabout=this.webpackJsonpabout||[]).push([[4],{164:function(t,e,n){"use strict";n.r(e);var a=n(3),i=(n(0),n(151)),o=Object(i.a)((function(t){return{paper:{height:"100%",padding:t.spacing(2),textAlign:"center",color:t.palette.text.secondary},section:{marginTop:10,padding:10,overflow:"auto",height:700}}}));e.default=function(t){var e=o();return Object(a.jsx)("div",{className:e.content,children:"Jyoti Sharma"})}}}]);
-//# sourceMappingURL=4.bbc338f0.chunk.js.map
