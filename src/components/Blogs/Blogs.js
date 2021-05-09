@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import {
     makeStyles,
 } from "@material-ui/core";
-import NameSection from "./NameSection";
 
 const useStyles = makeStyles((theme) => ({
     section: {
@@ -15,14 +14,14 @@ const useStyles = makeStyles((theme) => ({
 
 }));
 
-const Home = (props) => {
+const Blogs = (props) => {
     const classes = useStyles();
 
     return (
         <div className={classes.section}>
-            <NameSection/>
+            Blogs
         </div>
     );
 };
 
-export default Home;
+export default Blogs;
