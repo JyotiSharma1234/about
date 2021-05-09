@@ -2,8 +2,8 @@
  * All App routes, authenticated pages
  */
 import React from "react";
-const Home = React.lazy(() => import('./components/Home'))
-const Certificate = React.lazy(() => import('./components/Certificate'))
+const Home = React.lazy(() => import('./components/Home/Home'))
+const Certificate = React.lazy(() => import('./components/Certificates/Certificate'))
 
 let routes = [
     {

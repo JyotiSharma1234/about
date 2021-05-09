@@ -1,12 +1,20 @@
+import React from 'react';
 import './App.css';
 import { Switch, Redirect, Route } from 'react-router-dom';
 import Routes from './Routes'
 import { Suspense } from 'react';
+import NavBar from './components/NavBar';
+
+// Views 
+import { LadderLoading } from 'react-loadingg';
 
 function App() {
+
   return (
     <div className="App">
         <main className="App-header">
+            <LadderLoading/>
+            <NavBar/>
         <Suspense fallback={<div>Loading...</div>}>
             <Switch>
                 {Routes.map(route =>
