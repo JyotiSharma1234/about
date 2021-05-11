@@ -83,6 +83,7 @@ const TopBar = (props) => {
             onChange={handleChange}
             variant="scrollable"
             scrollButtons="on"
+            fullWidth
             indicatorColor="yellow"
       >
               <StyledTab label="Jyoti Sharma" />
