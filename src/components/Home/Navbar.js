@@ -45,6 +45,9 @@ const Navbar = () => {
                 <NavBtn>
                     <NavBtnLink to='/projects'>Projects</NavBtnLink>
                 </NavBtn>
+                <NavBtn>
+                    <NavBtnLink to='/contact'>Contact Me</NavBtnLink>
+                </NavBtn>
             </NavMenu>
         </Nav>
     </>

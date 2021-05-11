@@ -8,6 +8,7 @@ export const Nav = styled.nav`
   width: 100%;
   display: flex;
   position: fixed;
+  marginTop: 50px
   justify-content: space-between;
   z-index: 12;
   /* Third Nav */
