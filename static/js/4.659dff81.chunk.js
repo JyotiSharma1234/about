@@ -1,2 +1,0 @@
-(this.webpackJsonpabout=this.webpackJsonpabout||[]).push([[4],{171:function(t,e,o){"use strict";o.r(e);var i=o(2),n=(o(0),o(157)),a=Object(n.a)((function(t){return{section:{marginTop:80,padding:10,overflow:"auto",height:700,color:"yellow"}}}));e.default=function(t){var e=a();return Object(i.jsx)("div",{className:e.section,children:"Certificates"})}}}]);
-//# sourceMappingURL=4.659dff81.chunk.js.map
