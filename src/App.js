@@ -3,6 +3,8 @@ import './App.css';
 import { Switch, Route } from 'react-router-dom';
 import Routes from './Routes'
 import { Suspense } from 'react';
+import Particles from 'react-particles-js';
+import particlesConfig from './components/utils/ParticlesConfig'
 
 // Views 
 import MainSection from './components/MainSection';
@@ -16,6 +18,9 @@ const useStyles = makeStyles((theme) => ({
         position: 'fixed',
         bottom: '10px',
         right: '10px',
+    },
+    particles: {
+        position: 'absolute !important'
     }
 }));
 
@@ -25,6 +30,9 @@ function App() {
     return (
         <div className="App">
             <main className="App-header">
+            <div style={{ position: 'absolute'}}>
+                <Particles height="100vh" width="100vw" params={particlesConfig} />
+            </div>
                 <MainSection/>
                 <div className={classes.topScroll}>
                     <TopScrollButton/>
