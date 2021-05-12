@@ -2,10 +2,6 @@
 .typing_effect {
   font-family: "Lucida Console", "Courier New", monospace;
   font-weight:100;
-  font-size:40px;
+  font-size:26px;
   text-align: center;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  min-height:100vh;
 }
