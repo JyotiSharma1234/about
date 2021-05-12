@@ -20,7 +20,14 @@ const useStyles = makeStyles((theme) => ({
     boxLoading:{
         position: 'fixed',
         marginBottom: 40
-    }
+    },
+    panel: {
+        marginTop: 80,
+        height: 700,
+        color: '#fff',
+        position: 'relative',
+        zIndex: 100,
+    },
 }));
   
 const StyledTabs = withStyles({
@@ -40,8 +47,9 @@ const StyledTab = withStyles((theme) => ({
     root: {
         textTransform: 'none',
         color: '#fff',
-        fontWeight: theme.typography.fontWeightRegular,
-        fontSize: theme.typography.pxToRem(15),
+        fontWeight: 600,
+        fontFamily: 'Courier',
+        fontSize: theme.typography.pxToRem(18),
         marginRight: theme.spacing(1),
         '&:focus': {
             opacity: 1,
@@ -51,11 +59,12 @@ const StyledTab = withStyles((theme) => ({
 
 const Tabpanel = (props) => {
     const { children, value, index, ...others } = props
+    const classes = useStyles();
 
     return (
         <Typography 
             component="div" 
-            className="tabpanel"
+            className={classes.panel}
             role="tabpanel" 
             hidden={value !== index}
             id={`styled-tabpanel-${index}`}
@@ -84,7 +93,7 @@ const TopBar = (props) => {
             variant="scrollable"
             scrollButtons="on"
             fullWidth
-            indicatorColor="yellow"
+            indicatorColor="#fff"
       >
               <StyledTab label="Jyoti Sharma" />
               <StyledTab label="Certificates" />

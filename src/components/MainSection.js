@@ -5,13 +5,6 @@ import {
 import TopBar from "./TopBar";
 
 const useStyles = makeStyles((theme) => ({
-    section: {
-        marginTop: 80,
-        padding: 10,
-        overflow: 'auto',
-        height: 700,
-        color: 'yellow'
-    },
 
 }));
 

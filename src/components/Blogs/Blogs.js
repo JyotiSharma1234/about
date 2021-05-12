@@ -4,21 +4,13 @@ import {
 } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
-    section: {
-        marginTop: 80,
-        padding: 10,
-        overflow: 'auto',
-        height: 700,
-        color: 'yellow'
-    },
-
 }));
 
 const Blogs = (props) => {
     const classes = useStyles();
 
     return (
-        <div className={classes.section}>
+        <div>
             Blogs
         </div>
     );
