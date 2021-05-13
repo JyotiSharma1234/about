@@ -1,8 +1,5 @@
 import React from 'react';
 import './App.css';
-import { Switch, Route } from 'react-router-dom';
-import Routes from './Routes'
-import { Suspense } from 'react';
 import Particles from 'react-particles-js';
 import particlesConfig from './components/utils/ParticlesConfig'
 

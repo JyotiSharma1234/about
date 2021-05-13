@@ -13,8 +13,6 @@ import Projects from "./Projects/Projects";
 import ContactMe from "./ContactMe/ContactMe";
 import About from "./About/About";
 import Home from "./Home/Home";
-import {BoxLoading} from 'react-loadingg'
-import { ClassRounded, DeleteOutline } from "@material-ui/icons";
 
 const useStyles = makeStyles((theme) => ({
     boxLoading:{

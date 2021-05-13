@@ -7,7 +7,6 @@ import {
 const useStyles = makeStyles((theme) => ({
     heading:{
         textAlign: 'center',
-        paddingBottom: 30,
         fontSize: 32,
         fontWeight: 'bold',
         textTransform: 'uppercase',
