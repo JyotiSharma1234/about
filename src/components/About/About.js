@@ -10,6 +10,9 @@ import VizSensor from 'react-visibility-sensor';
 import Fade from '@material-ui/core/Fade';
 
 const useStyles = makeStyles((theme) => ({
+    root: {
+        margin: 20
+    },
     heading:{
         textAlign: 'center',
         fontSize: 32,
@@ -43,7 +46,7 @@ const About = (props) => {
             setActive(isVisible);
         }}>
             <Fade in={active} timeout={3000}>
-                <Container>
+                <Container className={classes.root}>
                     <Box className={classes.heading}>
                         Me talking about myself...
                     </Box>

@@ -11,6 +11,9 @@ import VizSensor from 'react-visibility-sensor';
 import Fade from '@material-ui/core/Fade';
 
 const useStyles = makeStyles((theme) => ({
+    root: {
+        margin: 20
+    },
     linkedInicon:{
         color: '#fff'
     },
@@ -48,7 +51,7 @@ const ContactMe = (props) => {
             setActive(isVisible);
         }}>
             <Fade in={active} timeout={3000}>
-                <Container className={classes.section}>
+                <Container className={classes.root}>
                     <Box>
                         <Box className={classes.heading}>
                             Get in Touch

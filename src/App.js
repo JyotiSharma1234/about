@@ -11,7 +11,8 @@ import { makeStyles, } from '@material-ui/core';
 const useStyles = makeStyles((theme) => ({
     topScroll: {
         color: 'white',
-        padding: 10,
+        backgroundColor: 'steelblue',
+        borderRadius: '50%',
         position: 'fixed',
         bottom: '10px',
         right: '10px',

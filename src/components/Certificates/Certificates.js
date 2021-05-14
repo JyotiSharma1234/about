@@ -3,6 +3,7 @@ import Logo from '../../images/certificates/jquery_udemy.jpg';
 import {
     makeStyles,
     Box,
+    Container,
 } from "@material-ui/core";
 import VizSensor from 'react-visibility-sensor';
 import Fade from '@material-ui/core/Fade';
@@ -11,6 +12,9 @@ import Lightbox from 'react-lightbox-component';
 import "react-lightbox-component/build/css/index.css";
 
 const useStyles = makeStyles((theme) => ({
+    root: {
+        margin: 20
+    },
     heading:{
         textAlign: 'center',
         fontSize: 32,
@@ -43,7 +47,7 @@ const Certificates = (props) => {
     const classes = useStyles();
 
     return (
-        <Box>
+        <Container className={classes.root}>
             <Box>
                 <Box className={classes.heading}>
                     Certificates
@@ -66,7 +70,7 @@ const Certificates = (props) => {
                             }}/>
                 </Box>
             </Box>
-        </Box>
+        </Container>
     );
 };
 
