@@ -17,7 +17,7 @@ let newTheme = createMuiTheme({
     breakpoints,
     palette: {
         primary: {
-            light: "#282c34",
+            light: "#fff",
             main: "#6772e5" //'#5533FF'
         },
 

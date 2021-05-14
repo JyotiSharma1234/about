@@ -21,7 +21,9 @@ const useStyles = makeStyles((theme) => ({
     },
     panel: {
         marginTop: 80,
-        height: 700,
+        marginBottom: 80,
+        height: '100%',
+        width: '100%',
         color: '#fff',
         position: 'relative',
         zIndex: 100,
@@ -90,8 +92,7 @@ const TopBar = (props) => {
             onChange={handleChange}
             variant="scrollable"
             scrollButtons="on"
-            fullWidth
-            indicatorColor="#fff"
+            indicatorColor="primary"
       >
               <StyledTab label="Jyoti Sharma" />
               <StyledTab label="Certificates" />
