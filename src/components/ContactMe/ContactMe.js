@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import {
     Box,
-    Container,
     Link,
     makeStyles,
 } from "@material-ui/core";
@@ -50,8 +49,8 @@ const ContactMe = (props) => {
         onChange={(isVisible) => {
             setActive(isVisible);
         }}>
-            <Fade in={active} timeout={3000}>
-                <Container className={classes.root}>
+            <Fade in={active} timeout={1000}>
+                <Box className={classes.root}>
                     <Box>
                         <Box className={classes.heading}>
                             Get in Touch
@@ -70,7 +69,7 @@ const ContactMe = (props) => {
                         </Box>
                     </Box>
                     <br/>
-                </Container>
+                </Box>
             </Fade>
         </VizSensor>
     );

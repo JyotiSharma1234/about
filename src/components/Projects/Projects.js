@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import {
     Box,
-    Container,
     makeStyles,
 } from "@material-ui/core";
 
@@ -25,14 +24,14 @@ const Projects = (props) => {
     const classes = useStyles();
 
     return (
-        <Container className={classes.root}>
+        <Box className={classes.root}>
             <Box className={classes.heading}>
                 Projects
             </Box>
             <Box>
                 Coming soon...
             </Box>
-        </Container>
+        </Box>
     );
 };
 

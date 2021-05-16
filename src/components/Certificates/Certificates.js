@@ -1,12 +1,8 @@
 import React, { useState } from "react";
-import Logo from '../../images/certificates/jquery_udemy.jpg';
 import {
     makeStyles,
     Box,
-    Container,
 } from "@material-ui/core";
-import VizSensor from 'react-visibility-sensor';
-import Fade from '@material-ui/core/Fade';
 import certificatesList from './CertificateList'
 import Lightbox from 'react-lightbox-component';
 import "react-lightbox-component/build/css/index.css";
@@ -47,7 +43,7 @@ const Certificates = (props) => {
     const classes = useStyles();
 
     return (
-        <Container className={classes.root}>
+        <Box className={classes.root}>
             <Box>
                 <Box className={classes.heading}>
                     Certificates
@@ -63,6 +59,7 @@ const Certificates = (props) => {
                             <img
                             key={idx}
                             src={image.src}
+                            alt={image.title}
                             className={classes.image}
                             style={{width: width, height: height}}
                             onClick={toggleLightbox.bind(null, idx)} />
@@ -70,7 +67,7 @@ const Certificates = (props) => {
                             }}/>
                 </Box>
             </Box>
-        </Container>
+        </Box>
     );
 };
 

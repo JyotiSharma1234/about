@@ -29,7 +29,7 @@ function App() {
         <div className="App">
             <main className="App-header">
             <div style={{ position: 'absolute'}}>
-                <Particles height="100vh" width="100vw" params={particlesConfig} />
+                <Particles height="100%" width="90vw" params={particlesConfig} />
             </div>
                 <MainSection/>
                 <div className={classes.topScroll}>

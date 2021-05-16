@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import {
     Box,
-    Container,
     makeStyles,
 } from "@material-ui/core";
+import BlogUrls from './BlogUrls'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -25,14 +25,14 @@ const Blogs = (props) => {
     const classes = useStyles();
 
     return (
-        <Container className={classes.root}>
+        <Box className={classes.root}>
             <Box className={classes.heading}>
                 Blogs
             </Box>
             <Box>
                 Coming soon...
             </Box>
-        </Container>
+        </Box>
     );
 };
 
